@@ -1,7 +1,7 @@
 ---
 applications:
 - name: cheapflights
-  path: build/libs/cheapflights-0.0.1-SNAPSHOT.jar
-  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git
+  command: main
   env:
-    POLL_INTERVAL_SECONDS: 20
+    GOPACKAGENAME: main
